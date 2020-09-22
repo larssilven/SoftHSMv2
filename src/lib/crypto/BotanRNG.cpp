@@ -37,7 +37,7 @@
 // Base constructor
 BotanRNG::BotanRNG()
 {
-	rng = new Botan::AutoSeeded_RNG();
+	rng = new Botan::Serialized_RNG(new Botan::AutoSeeded_RNG());
 }
 
 // Destructor
