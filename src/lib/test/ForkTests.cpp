@@ -60,6 +60,7 @@ void ForkTests::tearDown()
 	CRYPTOKI_F_PTR( C_Finalize(NULL_PTR) );
 }
 
+#ifndef P11_SHARED_LIBRARY
 void ForkTests::testFork()
 {
 	CK_RV rv;
@@ -90,7 +91,6 @@ void ForkTests::testFork()
 	rv = CRYPTOKI_F_PTR( C_Finalize(NULL_PTR) );
 	CPPUNIT_ASSERT(rv == CKR_OK);
 }
-#ifndef P11_SHARED_LIBRARY
 void ForkTests::testResetOnFork()
 {
 	CK_RV rv;

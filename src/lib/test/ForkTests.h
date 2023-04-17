@@ -42,8 +42,8 @@
 class ForkTests : public TestsNoPINInitBase
 {
 	CPPUNIT_TEST_SUITE(ForkTests);
-	CPPUNIT_TEST(testFork);
 #ifndef P11_SHARED_LIBRARY
+	CPPUNIT_TEST(testFork);
 	CPPUNIT_TEST(testResetOnFork);
 #endif
 	CPPUNIT_TEST_SUITE_END();
