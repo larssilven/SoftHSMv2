@@ -1,3 +1,9 @@
+softhsm2 (3+lars) UNRELEASED; urgency=medium
+
+  * Build with my fixes. 
+
+ -- Lars <lars@pkimodules.com>  Wed, 27 Sep 2023 13:37:47 +0200
+
 softhsm2 (2.6.1-2) unstable; urgency=medium
 
   * Explicitly enable ECC and EDDSA curves (Closes: #942419)
