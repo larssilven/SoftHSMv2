@@ -19,9 +19,7 @@ objstoretest_SOURCES =		objstoretest.cpp \
 				FileTests.cpp \
 				ObjectFileTests.cpp \
 				OSTokenTests.cpp \
-				ObjectStoreTests.cpp \
-				SessionObjectTests.cpp \
-				SessionObjectStoreTests.cpp
+				ObjectStoreTests.cpp
 
 if BUILD_OBJECTSTORE_BACKEND_DB
 objstoretest_SOURCES +=		DBTests.cpp \

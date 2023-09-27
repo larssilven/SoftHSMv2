@@ -1,0 +1,4 @@
+etc/softhsm
+usr/share/softhsm
+var/lib/softhsm
+var/lib/softhsm/tokens

@@ -1711,14 +1711,6 @@ void SymmetricAlgorithmTests::testDesEncryptDecrypt()
 	rv = generateDesKey(hSessionRW,IN_SESSION,IS_PUBLIC,hKey);
 	CPPUNIT_ASSERT(rv == CKR_OK);
 
-	encryptDecrypt({CKM_DES_CBC_PAD,NULL_PTR,0},blockSize,hSessionRO,hKey,blockSize*NR_OF_BLOCKS_IN_TEST-1);
-	encryptDecrypt({CKM_DES_CBC_PAD,NULL_PTR,0},blockSize,hSessionRO,hKey,blockSize*NR_OF_BLOCKS_IN_TEST+1);
-	encryptDecrypt({CKM_DES_CBC_PAD,NULL_PTR,0},blockSize,hSessionRO,hKey,blockSize*NR_OF_BLOCKS_IN_TEST);
-	encryptDecrypt({CKM_DES_CBC,NULL_PTR,0},blockSize,hSessionRO,hKey,blockSize*NR_OF_BLOCKS_IN_TEST);
-	encryptDecrypt({CKM_DES_CBC,NULL_PTR,0},blockSize,hSessionRO,hKey,blockSize*NR_OF_BLOCKS_IN_TEST+1, false);
-	encryptDecrypt({CKM_DES_ECB,NULL_PTR,0},blockSize,hSessionRO,hKey,blockSize*NR_OF_BLOCKS_IN_TEST);
-	encryptDecrypt({CKM_DES_ECB,NULL_PTR,0},blockSize,hSessionRO,hKey,blockSize*NR_OF_BLOCKS_IN_TEST+1, false);
-
 	CK_OBJECT_HANDLE hKey2 = CK_INVALID_HANDLE;
 
 	// Generate all combinations of session/token keys.

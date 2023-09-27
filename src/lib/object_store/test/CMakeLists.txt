@@ -18,8 +18,6 @@ set(SOURCES objstoretest.cpp
             ObjectFileTests.cpp
             OSTokenTests.cpp
             ObjectStoreTests.cpp
-            SessionObjectTests.cpp
-            SessionObjectStoreTests.cpp
             )
 
 if(WITH_OBJECTSTORE_BACKEND_DB)

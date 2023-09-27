@@ -1,0 +1,2 @@
+0001-Issue-548-Don-t-clean-up-engines-after-OpenSSL-has-a.patch
+0002-Fix-OPENSSL_cleanup-detection-without-using-our-own-.patch
