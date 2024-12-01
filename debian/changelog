@@ -1,8 +1,12 @@
-softhsm2 (3+lars) UNRELEASED; urgency=medium
+softhsm2 (3+lars+nmu1) UNRELEASED; urgency=medium
 
+  [ Lars ]
   * Build with my fixes. 
 
- -- Lars <lars@pkimodules.com>  Wed, 27 Sep 2023 13:37:47 +0200
+  [ Lars Silvén ]
+  * Latest from upstream develop branch. 
+
+ -- Lars Silvén <lars@pkimodules.com>  Sun, 01 Dec 2024 08:10:10 +0100
 
 softhsm2 (2.6.1-2) unstable; urgency=medium
 
